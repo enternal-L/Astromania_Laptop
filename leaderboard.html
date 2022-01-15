@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leaderboard</title>
+
+        <style type="text/css">
+            html{
+                font-size: 62.5%;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                overflow-x: hidden; 
+            }
+
+            a {
+                text-decoration: none;
+                margin-left: 20px;
+                color: #fff;
+                padding: 6px 15px;
+                border-radius: 20px;
+                font-family: sans-serif;
+                font-size: 1.6rem;
+            }
+
+            a:hover{
+                background: #fff;
+                color: #2b1055;
+            }
+
+            section img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+            }
+
+            .content-table{
+                position: absolute;
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 1.6rem;
+                z-index: 6;
+                min-width:50%;
+                color:#fff;
+                left: 400px;
+                top: 110px;
+                font-family: sans-serif;
+                aspect-ratio: 16/9;
+            }
+
+            .content-table thead tr{
+                background-color:purple;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .content-table th,
+            .content-table td {
+                padding: 12px 15px;
+            }
+
+        </style>
+    </head>
+    <body a link="white" vlink="white">
+        
+        <section>
+            <img src="images/S__32268296.jpg">
+        </section>
+
+        <div style = "position: absolute; top:25px; right:40px;; overflow-x: visible; z-index:6;">
+            <a href="index.html">
+                Home
+            </a>
+                    
+            <a href="leaderboard.html">
+                Leaderboard
+            </a>
+                
+            <a href="contact.html">
+                Contacts
+            </a>
+        </div>
+
+        <img src="paralax/IMG_7949 (3).png" style="width:6%;height:7%; position: absolute; top:20px; left: 20px; z-index:6;">
+
+        <img src="paralax/IMG_7950.png" style="width:35%;height:40%; position: absolute; top: 200px; right: 10px; z-index:6; transform: rotate(270deg);">
+
+        <img src="paralax/IMG_7963.png" style="width:20%;height:25%; position: absolute; top: 560px; left: 110px; z-index:6;">
+
+
+        <!---Make leaderboard 3 times larger--->
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nathan</td>
+                    <td>10000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Charles</td>
+                    <td>9000</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>John</td>
+                    <td>6000</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tim</td>
+                    <td>1100</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Rob</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Gertrude</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Jim</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Sheliqua</td>
+                    <td>72</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Bulthasar</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Pann</td>
+                    <td>57</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </body>
+</html>

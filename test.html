@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        body{
+            margin:0;
+        }
+        .container{
+            border:1px solid red;
+            width:400px;
+        }
+        .ratio{
+            background-color: #f09090;
+            padding-top:calc(100% / (16 / 10));
+            position:relative;
+            overflow:hidden;
+        }
+        .content{
+            position:absolute;
+            top:1rem;
+            left:1rem;
+            bottom:1rem;
+            right:1rem;
+            overflow:scroll;
+        }
+
+        p{
+            margin: 0;
+            color:blue;
+        }
+
+    </style>
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class = "ratio">
+            <div class = "content">
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

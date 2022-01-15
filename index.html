@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>AstroManiaLaptop</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body a link="white" vlink="white">
+    <!---Background Image--->
+    <section>
+      <img src="paralax/IMG_7945.PNG" id="bg" style="max-width: 100%; max-height:66%; position:absolute; z-index:-1; left: 1px; overflow-x: hidden;">
+      <img src="paralax/web 2 ans border png 2.png" id="bg2" style="z-index: 4;" >
+      <img src="paralax/web 2 ans border png 1.png" style="z-index:5;">
+    </section>
+  
+    <!---Hyperlinks--->
+    <div style = "position:absolute; top:25px; right:40px; overflow-x: visible; z-index:6;">
+        <a href="index.html">
+            Home
+        </a>
+                
+        <a href="leaderboard.html">
+            Leaderboard
+        </a>
+            
+        <a href="contact.html">
+            Contacts
+        </a>
+    </div>
+    
+    <!---Assests--->
+    <img src="paralax/IMG_7949 (3).png" style="max-width:6%;max-height:7%; position:absolute; top:20px; left: 20px; z-index:6; ">
+
+    <img src="paralax/IMG_7953.png" id="alien" style="max-width: 17%; max-height:40%; position:absolute; top:400px; left: 1px; z-index: 3; ">
+
+    <img src="paralax/IMG_7949 (3).png" id="title" style="max-width:95%; max-height: 100%; position:absolute; top:180px; padding-left:400px; padding-right:250px; z-index: 6; ">
+
+    <img src="paralax/IMG_7950.png" id = "rocket" style="max-height: 40%; max-width: 35%; position:absolute; top:100px; right: 30px; z-index:6; ">
+
+    <img src="paralax/IMG_7951.png" id = "astronaut" style="max-height: 40%; max-width: 35%; position:absolute; top:1600px; left: 20px; z-index:6; ">
+    
+    <img src="paralax/IMG_7954.png" id = "moon" style="max-height: 105%; max-width: 95%; position:absolute; top:1300px; right: 180px; z-index: 4; ">
+
+    <img src="paralax/IMG_7952.png" id = 'green' style="max-height: 20%; max-width: 15%; position:absolute; top:1790px; left: 22px; z-index: 5;">
+
+    <img src="paralax/IMG_7955.png" id = 'planet' style="max-height: 28%; max-width: 25%; position:absolute; top:1100px; right: 1px; z-index: 6;">
+
+    <canvas id="unity-canvas" width=853 height=480 style="position:absolute; width: 56%; height: 66%; background: #231F20; z-index: 6;top: 950px; right: 320px; padding-left: 0; padding-right:0; margin-left: auto; margin-right: auto;display: block;"></canvas>
+    <script src="Build/Astromania DevBuild V2.9 (WebGL) new.loader.js"></script>
+    
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Astromania DevBuild V2.9 (WebGL) new.data.br",
+        frameworkUrl: "Build/Astromania DevBuild V2.9 (WebGL) new.framework.js.br",
+        codeUrl: "Build/Astromania DevBuild V2.9 (WebGL) new.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "InteractClub",
+        productName: "Astromania DevBuild V2.9",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+
+    <!---Paralax Effect--->
+    <script type="text/javascript">
+      
+        bg = document.getElementById("bg");
+        title = document.getElementById("title");
+      
+        window.addEventListener("scroll", function(){
+            var value = window.scrollY;
+            
+            bg.style.top = value * 0.5 + 'px';
+            alien.style.left= value * 1 + 'px';
+        })
+  
+    </script>
+
+    <script>
+      
+    </script>
+  </body>
+</html>
